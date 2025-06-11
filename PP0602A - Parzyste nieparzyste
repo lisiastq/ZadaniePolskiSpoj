@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main(){
+	
+	int ile,a,n;
+	
+	cin>>ile;
+	for(int i=1;i<=ile;i++){
+		cin>>a;
+		int t[a];
+		for(int j=1;j<=a;j++){
+			cin>>t[j];
+			if(j%2==0){
+				cout<<t[j]<<" ";
+			}
+		}
+		for(int j=1;j<=a;j++){
+			if(j%2!=0){
+				cout<<t[j]<<" ";
+			}
+		}
+	}
+} 
