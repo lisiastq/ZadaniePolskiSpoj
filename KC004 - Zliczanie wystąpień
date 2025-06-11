@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main(){
+    
+    int a,b,c,s=0;
+    
+    while(cin>>a>>b){
+	for(int i=1;i<=b;i++){
+		cin>>c;
+		if(c==a){
+			s++;
+		}
+	}
+	cout<<s<<endl;
+	s=0;
+	}
+}  
