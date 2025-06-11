@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int a,b,ile;
+    cin>>ile;
+    for (int i=1;i<=ile;i++){
+    cin>>a>>b;
+    cout<<(2*a*b)/(a+b)<<endl;
+    }
+} 
