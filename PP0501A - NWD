@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main(){
+	
+	int a,b,p,d;
+	
+	cin>>d;
+	
+	for(int i=1;i<=d;i++){
+		cin>>a>>b;
+		while(b){
+			p=a;
+			a=b;
+			b=p%b;
+		}
+		cout<<a<<endl;
+}
+} 
