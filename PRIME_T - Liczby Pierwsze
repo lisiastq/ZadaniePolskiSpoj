@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main (){
+	
+	int a,z;
+	cin>>z;
+	for(int i=1;i<=z;i++){
+		int s=0;
+		cin>>a;
+		for(int j=1;j<=a;j++){
+			if(a%j==0){
+				s++;
+			}
+		}
+		if(s==2){
+			cout<<"TAK"<<" ";
+		}	
+		
+		else{
+			cout<<"NIE"<<" ";
+		}
+	}
+}
