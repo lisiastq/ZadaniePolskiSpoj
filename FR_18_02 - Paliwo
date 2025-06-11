@@ -1,0 +1,12 @@
+#include <iostream>
+#include<iomanip>
+using namespace std;
+ 
+int main() {
+	float n,b;
+	float vat,wynik;
+	cin>>n>>b;
+	vat = (b-n)/2;
+	wynik = n + vat;
+	cout<<fixed<<setprecision(2)<<vat<<" "<<wynik<<endl;
+} 
