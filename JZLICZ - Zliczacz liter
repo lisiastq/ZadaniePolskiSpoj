@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+int kub[123];
+int main(){
+ 
+	int ile,dl;
+	string s;
+	char z;
+	
+	cin>>ile;
+	cin.ignore();
+	for(int i=1;i<=ile;i++){
+		getline(cin,s);
+		dl=s.size();
+		for(int j=0;j<dl;j++){
+			kub[s[j]]++;
+		}
+	}
+	for(int i=97;i<=122;i++)
+	if(kub[i]!=0){
+		z=i;
+		cout<<z<<" "<<kub[i]<<endl;
+	}
+	
+	for(int i=65;i<=90;i++)
+	if(kub[i]!=0){
+		z=i;
+		cout<<z<<" "<<kub[i]<<endl;
+	}
+} 
