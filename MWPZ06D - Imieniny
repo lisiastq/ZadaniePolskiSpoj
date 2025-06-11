@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int c,ile, l;
+    cin>>ile;
+    while (ile--){
+    cin>>l>>c;
+    l--;
+    if(l>c){
+    	cout<<"TAK"<<endl;
+    }
+    else if(l==0 && c > 0){
+    	cout<<"TAK"<<endl;
+    }
+    else if (c==0){
+    	cout<<"NIE"<<endl;
+    }
+    else if (c%l > 0){
+    	cout<<"TAK"<<endl;
+    }
+    else{
+        cout<<"NIE"<<endl;
+    }
+}
+} 
