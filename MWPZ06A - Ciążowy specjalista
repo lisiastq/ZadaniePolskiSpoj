@@ -1,0 +1,18 @@
+#include<iostream>
+#include<algorithm>
+#include <cmath>
+using namespace std;
+int main(){
+	float ile,y,z,x,p1,w;
+	int wy;
+	cin>>ile;
+	while(ile--){
+		cin>>x>>y>>z;
+		p1=z-1;
+		w = x/p1;
+		w -= y;
+		w *= 12;
+		wy = abs(round(w));
+		cout<<wy<<endl;
+	}
+} 
