@@ -1,0 +1,27 @@
+#include<iostream>
+#include <cmath>
+using namespace std;
+int main(){
+	int ile,l,w;
+	float s,n;
+	cin>>ile;
+	for(int i=0;i<ile;i++){
+		s=0;
+		cin>>l;
+		int t[l];
+		for(int j=0;j<l;j++){
+			cin>>t[j];
+			s+=t[j];
+		}
+		s/=l;
+		n=abs(s-t[0]);
+		w=t[0];
+		for(int j=1;j<l;j++){
+			if(abs(s-t[j])<n){
+				n=abs(s-t[j]);
+				w=t[j];
+			}
+		}
+		cout<<w<<endl;
+	}
+}  
