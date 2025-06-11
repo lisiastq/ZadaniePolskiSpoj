@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main(){
+	long long c,s=0,ss=0;
+	while(cin>>c){
+		s+=c;
+		if(c==0){
+			cout<<s<<endl;
+			ss+=s;
+			s=0;
+		}
+	}
+	cout<<ss<<endl;
+}  
