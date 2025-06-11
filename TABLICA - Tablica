@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int tab[100];
+    int id=0;
+    while(cin>>tab[id]){
+    id++;
+    }
+    while(id>0){ 
+    id--;
+    cout<<tab[id]<<" ";
+    }
+} 
