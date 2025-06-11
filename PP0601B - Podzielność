@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main(){
+	
+	int ile,a,b,c;
+	
+	cin>>ile;
+	for(int i=1;i<=ile;i++){
+		cin>>a>>b>>c;
+		for(int j=b;j<=a;j++){
+			if(j%b==0 && j%c!=0){
+				cout<<j<<" ";
+			}
+		}
+		cout<<endl;
+	}
+} 
