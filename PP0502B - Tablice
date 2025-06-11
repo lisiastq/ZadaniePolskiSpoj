@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main(){
+	
+	int n, t[101],ile;
+	
+	cin>>ile;
+	
+	for(int i=1;i<=ile;i++){
+		cin>>n;
+		for(int j=0;j<n;j++){
+			cin>>t[j];
+		}
+		for(int j=n-1;j>-1;j--){
+			cout<<t[j]<<" ";
+		}
+		cout<<endl;
+	}
+} 
