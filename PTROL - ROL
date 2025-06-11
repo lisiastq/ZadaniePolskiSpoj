@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main(){
+	
+	int ile,a,n;
+	
+	cin>>ile;
+	for(int i=1;i<=ile;i++){
+		cin>>a;
+		int t[a];
+		for(int j=0;j<a;j++){
+			cin>>t[j];
+		}
+		for(int j=1;j<a;j++){
+			cout<<t[j]<<" ";
+		}
+		cout<<t[0]<<endl;
+	}
+} 
